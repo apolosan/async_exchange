@@ -1,0 +1,55 @@
+[profile.default]
+solc_version = "0.8.24"
+auto_detect_solc = true
+src = "src"
+out = "out"
+libs = ["lib"]
+
+remappings = [
+    '@layerzerolabs/=lib/solidity-examples/',
+    '@aave/core-v3/=lib/aave-v3-core/',
+    '@chainlink/=lib/chainlink/',
+    '@beefy/=lib/beefy-contracts/contracts/BIFI/',
+    '@beefy-zaps/=lib/beefy-zaps/',
+    '@0x/contracts-utils/=lib/0xprotocol/utils/',
+    '@0x/zero-ex/=lib/0xprotocol/zero-ex/',
+    '@0x/contracts-erc20/=lib/0xprotocol/erc20/',
+    '@openzeppelin/=lib/openzeppelin-contracts/'
+]
+
+block_gas_limit = 20_000_000
+optimizer = true
+optimizer_runs = 2_000_000
+memory_limit = 1_073_741_824
+gas_reports = ["*"]
+
+[fmt]
+line_length = 150
+tab_width = 4
+bracket_spacing = true
+
+[rpc_endpoints]
+local="http://127.0.0.1:8545"
+goerli="https://rpc.ankr.com/eth_goerli"
+bsc_testnet="https://data-seed-prebsc-1-s3.binance.org:8545"
+mumbai="https://polygon-mumbai-bor.publicnode.com"
+fantom_testnet="https://fantom-testnet.public.blastapi.io"
+sepolia="https://eth-sepolia.g.alchemy.com/v2/QIrjpC82K8VlHFNCrZZ9YmNxDNHRcjRc"
+scroll_sepolia="scroll-sepolia-testnet.rpc.thirdweb.com"
+
+avalanche="https://avalanche.rpc.thirdweb.com"
+gnosis="https://rpc.ankr.com/gnosis"
+arbitrum="https://arbitrum.llamarpc.com"
+base="https://base.publicnode.com"
+polygon="https://polygon-mainnet.g.alchemy.com/v2/VFnur-ZlerwuG9NAAy0JDPve9oT-NyTZ"
+bsc="https://bsc-dataseed.binance.org"
+fantom="https://fantom.rpc.thirdweb.com"
+evmos="https://evmos-evm.publicnode.com"
+ethereum="https://eth-mainnet.g.alchemy.com/v2/i77OXfpYHkX5ipMOiZRBRbDGes5SzILS"
+zkevm="https://zkevm-rpc.com"
+celo="https://forno.celo.org"
+optimism="https://opt-mainnet.g.alchemy.com/v2/E296ZW2iuhc3Pyw9cCyCR2NXT0UKSuxY"
+moonriver="https://moonriver.rpc.thirdweb.com"
+scroll="https://1rpc.io/scroll"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

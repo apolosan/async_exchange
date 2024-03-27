@@ -1,0 +1,16 @@
+node_modules
+.env
+.secret
+.vscode
+coverage
+coverage.json
+typechain
+out
+broadcast
+lib
+
+#Hardhat files
+cache
+artifacts
+scripts
+script
